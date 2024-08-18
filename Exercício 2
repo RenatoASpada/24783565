@@ -1,0 +1,26 @@
+// Código Gestão Financeira
+/* Renato Alves Spada - 24783565
+   A função desse código é registrar receitas e despesas diárias
+   e fornecer o valor de saldo atualizado */
+
+#include <stdio.h> // Adição da biblioteca
+
+int main() { // Código principal
+    float receita, despesa, saldo; // Definição de variáveis
+
+    saldo = 0; // Define o valor inicial do saldo 
+
+    printf("Digite o valor da receita: "); // Entrada de dados pelo usuário
+    scanf("%f", &receita); // Leitura e armazenamento dos dados inseridos pelo usuário
+
+    printf("Digite o valor da despesa: "); // Entrada de dados pelo usuário
+    scanf("%f", &despesa); // Leitura e armazenamento dos dados inseridos pelo usuário
+
+    // Calcula o saldo
+    saldo += receita;
+    saldo -= despesa;
+
+    printf("Seu saldo atual é: R$ %.2f\n", saldo); // Retorno do resultado para o usuário
+
+    return 0;
+}
