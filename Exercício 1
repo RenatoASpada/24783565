@@ -1,0 +1,19 @@
+// Código Recepção
+/* Renato Alves Spada - 24783565
+   A função desse código é contabilizar o número de visitantes
+   do dia e enviar uma mensagem de confirmação de visita */
+
+#include <stdio.h> // Adição da biblioteca
+
+int main() { // Código principal
+    int visitantes; // Definição de variável 
+
+    printf("Digite o número de visitantes: "); // Entrada de dados pelo usuário
+    scanf("%d", &visitantes);
+
+    // Exibição do resultado para o usario
+    printf("O número de visitantes registrados hoje é: %d\n", visitantes); 
+    printf("Registro confirmado!\n");  
+
+    return 0;
+}
