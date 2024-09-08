@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    const float pi = 3.14; // define o valor de pi
+    float r, a; // define as variaveis que serão usadas
+
+    printf("\nDigite o raio do circulo: "); // entrada de dados
+    scanf("%f", &r);
+
+    a = pi * (r * r); // calculo
+
+    printf("\nA area do circulo e: %.2f\n", a); // resultado final
+
+    return 0;
+}
