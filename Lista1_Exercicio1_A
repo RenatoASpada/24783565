@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    long long int n = 400000000; // foi trocado para long long int pelo fato do valor ser alto d+ para ser usado apenas int (float tbm daria certo).
+    printf("%lld\n", n);
+    return 0;
+}
