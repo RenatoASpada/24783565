@@ -1,0 +1,19 @@
+// Código Exericio 2 - F
+/* Renato Alves Spada - 24783565
+   A função desse código é converter uma temperatura
+   em graus Farenheit para graus Centígrados */
+
+#include <stdio.h>
+
+int main()
+ {
+    float f, c;
+
+    printf("Digite a temperatura em Farenheit: ");
+    scanf("%f", &f);
+
+    c = (5.0 / 9.0) * (f - 32.0); // Calculo de conversão
+
+    printf("A temperatura em graus Centigrados é de %.2f\n", c);
+    return 0;
+}
