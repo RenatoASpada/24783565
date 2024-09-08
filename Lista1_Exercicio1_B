@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    int a = 0; // Foi alterado a ordem para o codigo funcionar corretamente, tbm foi colocado um valor inicial para ser mostrado no scanf.
+    printf("%d\n", a);
+    return 0;
+}
