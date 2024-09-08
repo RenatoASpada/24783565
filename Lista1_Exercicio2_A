@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main ()
+{
+int a, b, c; // declaração de variaveis
+
+printf("\nDigite o primeiro número: "); // Entrada de dados pelo usario
+scanf("%d", &a); // Gravação do dado lido na memoria
+
+printf("\nDigite o segundo número: ");
+scanf("%d", &b);
+
+printf("\nDigite o terceiro número: ");
+scanf("%d", &c);  
+
+printf("Os números em ordem inversa são: %d, %d, %d\n", c, b, a); // mostra os numeros em ordem inversa
+
+return 0;
+} 
