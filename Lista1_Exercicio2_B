@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    char nome[10]; // permite que seja digitado um nome de até 10 caracteres
+
+    printf("Olá, eu sou o Nº 1, como é seu nome? ");
+    scanf("%s", nome); // %s é usado pois se trata de uma variavel string
+
+    printf("Bem-vindo ao clube, %s!\n", nome);
+
+    return 0;
+}
