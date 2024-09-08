@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    char nome[10];
+    int idade;
+    const int ano = 365; // define a variavel como constante, ela indica qnts dias tem um ano
+
+    printf("Digite seu nome: "); // entrada de dados
+    scanf("%s", nome); // saida de dados
+
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+
+    int dias_totais = idade * ano; // calculo
+
+    printf("%s, voce tem aproximadamente %d dias de vida\n", nome, dias_totais); // resultado final
+
+    return 0;
+}
