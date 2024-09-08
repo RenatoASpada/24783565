@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    printf("%d\n", 4); // Foi adicionado o \n para melhorar a formatação da saida do codigo.
+    printf("%d\n", 2);
+    return 0;
+}
