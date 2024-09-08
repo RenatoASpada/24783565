@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() 
+{    
+    int a;
+    scanf("%d", &a); // Foi adicionado o caracter & que é responsavél por indicar o endereço da variavel.
+    printf("%d", a);
+    return 0;
+
+}
