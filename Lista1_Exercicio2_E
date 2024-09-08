@@ -1,0 +1,29 @@
+// Código Exericio 2 - E
+/* Renato Alves Spada - 24783565
+   A função desse código é calcular a quantidade necessária
+   de latas de tinta para pintar uma parede */
+
+#include <stdio.h>
+
+int main()
+ {
+    float l, h, a, litros_necessarios, latas;
+
+    printf("Digite a largura da parede em metros: ");
+    scanf("%f", &l);
+
+    printf("Digite a altura da parede em metros: ");
+    scanf("%f", &h);
+
+    a = l * h; // Calculo da area da parede
+
+    litros_necessarios = a * 0.3; // Calculo da quantidade de litros de tinta necessarios
+
+    latas = litros_necessarios / 2; // Calculo da quantidade de latas de tinta
+
+    latas = ceil(latas); // Arredondando para cima o numero de latas
+
+    printf("Sera(ao) necessaria(s) %.0f lata(s) de tinta.\n", latas); // %.0f mostra o resultado como numero inteiro
+
+    return 0;
+}
