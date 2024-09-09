@@ -1,0 +1,40 @@
+// Código Exericio 2 - I
+/* Renato Alves Spada - 24783565
+   A função desse código é ler os coeficientes de
+   uma equação de segundo grau e calcular suas raízes.  */
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, b, c, d, x1, x2;
+
+    printf("Digite o valor de a: "); // Entrada de dados
+    scanf("%f", &a);
+
+    printf("Digite o valor de b: ");
+    scanf("%f", &b);
+
+    printf("Digite o valor de c: ");
+    scanf("%f", &c);
+
+    d = (b*b) - (4*a*c); // Calculo do discriminante
+
+    // Calculo das raizes e analise do valor de delta
+    if (d > 0) {
+        x1 = (-b + sqrt(d)) / (2 * a);
+        x2 = (-b - sqrt(d)) / (2 * a);
+
+        printf("A equação possui duas raizes reais: x1 = %.2f e x2 = %.2f\n", x1, x2);
+
+    }
+     else if (d == 0) {
+        x1 = -b / (2 * a); // calculo da raiz real
+        printf("A equação possui uma raiz real: x = %.2f \n", x1);
+    }
+     else {
+        printf("A equação não possui raizes reais.\n");
+    }
+
+    return 0;
+}
