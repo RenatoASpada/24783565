@@ -1,0 +1,26 @@
+// Código Exericio 2 - G
+/* Renato Alves Spada - 24783565
+   A função desse código é calcular a massa de ar do 
+   pneu com os dados de pressão, volume, e temperatura */
+
+#include<stdio.h>
+
+int main ()
+{
+    float t, p, v;
+
+    printf("Digite a temperatura do pneu: ");
+    scanf("%f", &t);
+
+    printf("Digite a pressão do pneu: ");
+    scanf("%f", &p);
+
+    printf("Digite o volume do pneu: ");
+    scanf("%f", &v);
+
+    float m = (p*v) / (0.37*(t+460));
+
+    printf("A massa de ar desse pneu é de %.2f\n", m);
+
+    return 0;
+}
