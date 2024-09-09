@@ -1,0 +1,25 @@
+// Código Exericio 2 - H
+/* Renato Alves Spada - 24783565
+   A função desse código é calcular o primeiro termo de uma Progressão Aritmética (PA),
+   sua razão, um número N e N-ésimo termo da PA */
+
+#include <stdio.h>
+
+int main() {
+    int a1, r, n;
+
+    printf("Digite o primeiro termo da PA: "); // Entrada de dados
+    scanf("%d", &a1);
+
+    printf("Digite a razão da PA: ");
+    scanf("%d", &r);
+
+    printf("Digite o valor de N (termo desejado): ");
+    scanf("%d", &n);
+
+    int an = a1 + (n - 1) * r;  // Calculo do N-ésimo termo
+
+    printf("O %d termo da PA é: %d\n", n, an); // resultado
+
+    return 0;
+}
