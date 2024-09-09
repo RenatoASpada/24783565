@@ -1,0 +1,28 @@
+// Código Exericio 2 - J
+/* Renato Alves Spada - 24783565
+   A função desse código é calcular dinheiro através do numero de notas  */
+
+#include <stdio.h>
+
+int main() {
+    int n1, n10, n50, n100, v;
+
+    // entrada de dados
+    printf("Digite a quantidade de notas de 1 real: ");
+    scanf("%d", &n1);
+
+    printf("Digite a quantidade de notas de 10 reais: ");
+    scanf("%d", &n10);
+
+    printf("Digite a quantidade de notas de 50 reais: ");
+    scanf("%d", &n50);
+
+    printf("Digite a quantidade de notas de 100 reais: ");
+    scanf("%d", &n100);
+
+    v = (n1 * 1) + (n10 * 10) + (n50 * 50) + (n100 * 100); // Calculo do valor total
+
+    printf("O valor total em dinheiro é: R$ %d\n", v);   // Resultado
+
+    return 0;
+}
