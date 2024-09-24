@@ -1,0 +1,25 @@
+/* Exercicio 3 B
+   Renato Alves Spada - RA:24783565 */
+
+#include<stdio.h>
+
+int main(){
+
+int c, f;
+
+printf("\nDigite a temperatura em Fahrenheit: ");
+scanf("%d", &f);
+
+c = (f - 32) * (5 / 9);
+
+printf("\nA temperatura em Celsius é: %d ", c);
+
+return 0;
+}
+
+/* Execução:
+   Valor a ser digitado: 565
+   Resultado final: 0
+   Justificativa: O programa não vai retornar o  resultado desejado, pois, na fórmula existe uma divisão
+   que não vai resultar em um numero inteiro, impossibilitando um resultado satisfatório.
+   Para corrigir esse erro seria necessário trocar a variável int por double ou float. */
