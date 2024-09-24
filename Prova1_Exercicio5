@@ -1,0 +1,26 @@
+/* Exercicio 5
+   Renato Alves Spada - 24783565 */
+
+   #include<stdio.h>
+
+int main(){
+
+int c;
+
+printf("\nDigite a temperatura do depósito em graus Celsius: ");
+scanf("%d", &c);
+
+if (c  < -10){
+    printf("Risco Baixo - Armazenamento ideal para alimentos congelados");
+ }
+ else if ((c >= -10) && (c <= 0)){
+    printf("Risco Moderado - Condições aceitáveis para armazenamento refrigerado.");
+ }
+ else if ((c >= 1) && (c <= 10) || (c == 15)){
+    printf("Risco Elevado - Monitore a temperatura");
+ }
+ else {
+    printf("Risco Crítico - Ação Imediata Necessária");
+ }
+ return 0;
+}
