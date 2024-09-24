@@ -1,0 +1,12 @@
+/* Exercicio 1
+   Renato Alves Spada - RA:24783565 */
+
+int main() {
+    int num;
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+    if (num > 0) {
+        printf("Numero positivo\n");
+    }
+    return 0;
+}
