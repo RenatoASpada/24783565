@@ -1,0 +1,12 @@
+/* Exercicio 2
+   Renato Alves Spada - RA:24783565 */
+
+int main() {
+    int a, b;
+    float media;
+    printf("Digite dois numeros: ");
+    scanf("%d %d", &a, &b);
+    media = (a + b) / 2.0;
+    printf("Media: %.2f\n", media);
+    return 0;
+}
