@@ -1,0 +1,11 @@
+// Exericios Arduino
+// Renato Alves Spada - 24783565
+
+for ( int i = 0; i < 4; i ++) { // Enquanto o contador for menor o comando dentre do "for" vai ser executado
+ Serial . println ( ledPins [ i ]); // Vai exibir a pinagem do led corespondente
+}
+
+/* Esse código irá iterar 4 vezes sobre um vetor chamado ledPins. 
+   Em cada iteração, o valor do elemento atual do vetor será impresso na serial.
+
+   A saida depende dos valores declarados no vetor. Como exemplo int ledPins[] = {2, 4, 7, 12};, a saida será: 2, 4, 7, 12*/ 
