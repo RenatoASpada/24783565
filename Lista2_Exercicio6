@@ -1,0 +1,27 @@
+// Código Leitura de Sensores de Distância  
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+
+int main() {
+    float distancia;
+    char continuar;
+
+    do {
+        printf("Digite a distância medida pelo sensor (em cm): ");
+        scanf("%f", &distancia);
+
+        if (distancia < 10) {
+            printf("Distância inferior a 10 cm detectada!\n");
+            break; // Encerra o loop
+        } else {
+            printf("Distância atual: %.2f cm\n", distancia);
+        }
+
+        printf("Deseja continuar as leituras? (s/n): ");
+        scanf(" %c", &continuar);
+    } while (continuar == 's' || continuar == 'S');
+
+    printf("Leitura encerrada.\n");
+    return 0;
+}
