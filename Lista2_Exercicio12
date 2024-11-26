@@ -1,0 +1,4 @@
+// Exericios Arduino
+// Renato Alves Spada - 24783565
+
+float temperaturas[] = {25.5, 26.0, 24.8, 27.3, 26.5}; // a função deve ser declarada dessa forma
