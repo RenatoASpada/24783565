@@ -1,0 +1,53 @@
+// Código Controle de Movimento de um Robô 
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+
+int main() {
+    int x = 0, y = 0; // Coordenadas iniciais
+    char comando;
+
+    printf("Bem-vindo ao simulador de robô!\n");
+    printf("Posição atual do robô: (%d, %d)\n", x, y);
+
+    do {
+        printf("Digite um comando (f - frente, t - trás, e - esquerda, d - direita, s - sair): ");
+        scanf(" %c", &comando);
+
+        switch (comando) {
+            case 'f':
+                y++;
+                break;
+            case 't':
+                y--;
+                break;
+            case 'e':
+                x--;
+                break;
+            case 'd':
+                x++;
+                break;
+        }
+
+        // Verificar limites do espaço 10x10
+        if (x < 0) {
+            x = 0;
+            printf("Limite do espaço atingido!\n");
+        } else if (x > 9) {
+            x = 9;
+            printf("Limite do espaço atingido!\n");
+        }
+        if (y < 0) {
+            y = 0;
+            printf("Limite do espaço atingido!\n");
+        } else if (y > 9) {
+            y = 9;
+            printf("Limite do espaço atingido!\n");
+        }
+
+        printf("Posição atual do robô: (%d, %d)\n", x, y);
+    } while (comando != 's');
+
+    printf("Simulação encerrada.\n");
+    return 0;
+}
