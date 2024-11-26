@@ -1,0 +1,36 @@
+// Código Controle de Atuação do Robô  
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+
+int main() {
+    char acao;
+
+    do {
+        printf("Selecione uma ação:\n");
+        printf("l - Ligar lâmpada\n");
+        printf("t - Tocar som\n");
+        printf("m - Mover braço\n");
+        printf("s - Sair\n");
+        scanf(" %c", &acao);
+
+        switch (acao) {
+            case 'l':
+                printf("Lâmpada ligada!\n");
+                break;
+            case 't':
+                printf("Som tocando!\n");
+                break;
+            case 'm':
+                printf("Braço em movimento!\n");
+                break;
+            case 's':
+                break; // Sai do switch
+            default:
+                printf("Comando inválido.\n");
+        }
+    } while (acao != 's');
+
+    printf("Programa encerrado.\n");
+    return 0;
+}
