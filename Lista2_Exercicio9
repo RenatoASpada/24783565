@@ -1,0 +1,61 @@
+// Código Simulação de Navegação Autônoma
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+
+int main() {
+    int x = 0, y = 0; // Posição inicial do robô (canto inferior esquerdo)
+    char comando;
+
+    printf("Bem-vindo ao simulador de robô autônomo!\n");
+    printf("Posição atual: (%d, %d)\n", x, y);
+
+    do {
+        printf("Digite um comando (c - cima, b - baixo, e - esquerda, d - direita, s - sair): ");
+        scanf(" %c", &comando);
+
+        switch (comando) {
+            case 'c':
+                if (y < 4) {
+                    y++;
+                    printf("Movendo para cima...\n");
+                } else {
+                    printf("Limite do grid atingido!\n");
+                }
+                break;
+            case 'b':
+                if (y > 0) {
+                    y--;
+                    printf("Movendo para baixo...\n");
+                } else {
+                    printf("Limite do grid atingido!\n");
+                }
+                break;
+            case 'e':
+                if (x > 0) {
+                    x--;
+                    printf("Movendo para a esquerda...\n");
+                } else {
+                    printf("Limite do grid atingido!\n");
+                }
+                break;
+            case 'd':
+                if (x < 4) {
+                    x++;
+                    printf("Movendo para a direita...\n");
+                } else {
+                    printf("Limite do grid atingido!\n");
+                }
+                break;
+            case 's':
+                break; // Sai do loop
+            default:
+                printf("Comando inválido.\n");
+        }
+
+        printf("Nova posição: (%d, %d)\n", x, y);
+    } while (comando != 's');
+
+    printf("Simulação encerrada.\n");
+    return 0;
+}
