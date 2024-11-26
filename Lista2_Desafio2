@@ -1,0 +1,77 @@
+// Código Controle Completo de Robô 
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdbool.h>
+
+#define LINHAS 10
+#define COLUNAS 10
+#define CAPACIDADE_BATERIA 100
+
+typedef struct {
+    int x, y;
+    int bateria;
+} Robo;
+
+// Funções auxiliares
+void limparTela();
+void mostrarGrid(Robo robo, char grid[LINHAS][COLUNAS]);
+
+// Funções para cada funcionalidade
+void controleMovimento(Robo *robo, char grid[LINHAS][COLUNAS]);
+void leituraSensores(Robo robo);
+void controleAtuacao(Robo *robo);
+void monitoramentoBateria(Robo *robo);
+void navegacaoAutonoma(Robo *robo, char grid[LINHAS][COLUNAS]);
+
+int main() {
+    Robo robo = {0, 0, CAPACIDADE_BATERIA};
+    char grid[LINHAS][COLUNAS] = {0}; // Inicializa o grid com valores nulos
+    bool sair = false;
+
+    srand(time(NULL)); // Inicializa a semente para números aleatórios
+
+    while (!sair) {
+        limparTela();
+        mostrarGrid(robo, grid);
+
+        printf("Menu principal:\n");
+        printf("1. Controle de Movimento\n");
+        printf("2. Leitura de Sensores de Distância\n");
+        printf("3. Controle de Atuação\n");
+        printf("4. Monitoramento de Bateria\n");
+        printf("5. Navegação Autônoma\n");
+        printf("6. Sair\n");
+
+        char opcao;
+        scanf(" %c", &opcao);
+
+        switch (opcao) {
+            case '1':
+                controleMovimento(&robo, grid);
+                break;
+            case '2':
+                leituraSensores(robo);
+                break;
+            case '3':
+                controleAtuacao(&robo);
+                break;
+            case '4':
+                monitoramentoBateria(&robo);
+                break;
+            case '5':
+                navegacaoAutonoma(&robo, grid);
+                break;
+            case '6':
+                sair = true;
+                break;
+            default:
+                printf("Opção inválida.\n");
+        }
+    }
+
+    printf("Simulação encerrada.\n");
+    return 0;
+}
