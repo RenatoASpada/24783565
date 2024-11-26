@@ -1,0 +1,16 @@
+// Exericios Arduino
+// Renato Alves Spada - 24783565
+
+int ledPins[] = {2, 4, 7, 12}; // Vetor com os pinos dos LEDs
+
+void setup() {
+  // Configura a comunicação serial
+  Serial.begin(9600);
+}
+
+void loop() {
+  for (int i = 0; i < 4; i++) {
+    Serial.println(ledPins[i]);
+  }
+  delay(1000); // Aguarda 1 segundo entre cada iteração do loop
+}
