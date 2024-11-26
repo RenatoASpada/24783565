@@ -1,0 +1,5 @@
+// Exericios Arduino
+// Renato Alves Spada - 24783565
+
+const int vetorSize = 5; // Define o tamanho do vetor
+int randomValues[vetorSize]; // Declara o vetor para armazenar os valores aleatórios
