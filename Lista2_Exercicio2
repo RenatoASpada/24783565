@@ -1,0 +1,24 @@
+// Código Controle de Combustível em um Carro
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+
+int main() {
+    int nivelBateria;
+
+    while () {
+        printf("Digite o nível atual da bateria: ");
+        scanf("%d", &nivelBateria);
+
+        if (nivelBateria < 15) {
+            printf("ATENÇÃO! Nível da bateria baixo. Por favor, recarregue o veículo.\n");
+        } else if (nivelBateria == 100) {
+            printf("Bateria totalmente carregada!\n");
+            break; 
+        } else {
+            printf("Nível da bateria ok\n");
+        }
+    }
+
+    return 0;
+}
