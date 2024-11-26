@@ -1,0 +1,7 @@
+// Exericios Arduino
+// Renato Alves Spada - 24783565
+
+sizeof(sensorData) / sizeof(sensorData[0]) // calcula o número de elementos em um vetor.
+
+//sizeof(sensorData) nos dá o tamanho total do vetor em bytes.
+//sizeof(sensorData[0]) nos dá o tamanho de um elemento do vetor em bytes.
