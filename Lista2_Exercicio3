@@ -1,0 +1,24 @@
+// Código Contagem de Passos para Meta Diária
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+
+int main() {
+    int passos, totalPassos = 0;
+    const int meta = 10000;
+
+    while (totalPassos < meta) {
+        printf("Digite a quantidade de passos dados agora: ");
+        scanf("%d", &passos);
+
+        totalPassos += passos;
+
+        printf("Total de passos até agora: %d\n", totalPassos);
+
+        if (totalPassos >= meta) {
+            printf("Parabéns! Você atingiu a meta de 10.000 passos!\n");
+        }
+    }
+
+    return 0;
+}
