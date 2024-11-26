@@ -1,0 +1,4 @@
+// Exericios Arduino
+// Renato Alves Spada - 24783565
+
+cameraData[3] = analogRead(A1); // Lê o valor analógico do pino A1 e armazene esse valor na quarta posição do vetor cameraData
