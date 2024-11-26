@@ -1,0 +1,22 @@
+// Código Monitoramento de Bateria do Robô 
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+
+int main() {
+    float nivelBateria;
+
+    do {
+        printf("Digite o nível atual da bateria (em porcentagem): ");
+        scanf("%f", &nivelBateria);
+
+        if (nivelBateria < 20) {
+            printf("Atenção! Nível da bateria baixo (%.2f%%). Carregue a bateria!\n", nivelBateria);
+        } else {
+            printf("Nível da bateria estável (%.2f%%).\n", nivelBateria);
+        }
+    } while (nivelBateria < 20);
+
+    printf("Nível da bateria recuperado! Continue operando.\n");
+    return 0;
+}
