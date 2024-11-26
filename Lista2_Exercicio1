@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float temperatura;
+
+    while () {
+        printf("Digite a temperatura atual (em Celsius): ");
+        scanf("%f", &temperatura);
+
+        if (temperatura < 20 || temperatura > 25) {
+            printf("ALERTA! Temperatura fora da faixa segura.\n");
+        } else {
+            printf("Temperatura dentro da faixa segura.\n");
+        }
+    }
+
+    return 0;
+}
