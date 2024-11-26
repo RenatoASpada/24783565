@@ -1,0 +1,4 @@
+// Exericios Arduino
+// Renato Alves Spada - 24783565
+
+int cameraData[10]; // é assim que função deve ser declarada
