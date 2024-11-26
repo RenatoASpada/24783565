@@ -1,0 +1,22 @@
+// Código erificação de Depósito Mínimo
+// Renato Alves Spada - 24783565
+
+#include <stdio.h>
+
+int main() {
+    float valorDeposito;
+    const float valorMinimo = 500.00;
+
+    do {
+        printf("Digite o valor do depósito inicial (R$): ");
+        scanf("%f", &valorDeposito);
+
+        if (valorDeposito < valorMinimo) {
+            printf("Valor de depósito insuficiente. O valor mínimo é R$ %.2f.\n", valorMinimo);
+        }
+    } while (valorDeposito < valorMinimo);
+
+    printf("Depósito válido! O valor de R$ %.2f foi registrado.\n", valorDeposito);
+
+    return 0;
+}
